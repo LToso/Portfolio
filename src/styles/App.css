@@ -1,0 +1,25 @@
+
+.highlight {
+  color: #00FF77;
+  font-weight: bold;
+}
+
+.next-page-container {
+  width: 100%;
+  position: absolute;
+  bottom: 5vh;
+}
+
+.next-page {
+  width: 300px;
+  margin: auto;
+  text-align: center;
+  color: #FFF;
+  cursor: pointer;
+}
+
+.next-page svg {
+  padding-right: 7px;
+}
+
+
