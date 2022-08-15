@@ -4,8 +4,6 @@
 
 .home-hello {
     margin: auto;
-    padding-top: 100px;
-    margin: 0px 50px;
 }
 
 .home-pre-name {
@@ -31,7 +29,7 @@
 }
 
 .home-resume {
-    margin: 50px 0px 25px 0px;
+    margin-top: 20px;
 }
 
 .home-download {
@@ -39,7 +37,43 @@
     border: 1px solid #00FF77;
     color: #00FF77;
     border-radius: 5px;
-    padding: 25px;
-    width: 220px;
+    padding: 25px 0px;
     text-align: center;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+    .home-hello {
+        padding-top: 25vh;
+        margin: 0px 20px;
+    }
+
+    .home-download {
+        width: 100%;
+    }
+}
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+    .home-hello {
+        padding-top: 30vh;
+        margin: 0px 20px;
+    }
+
+    .home-download {
+        width: 320px;
+    }
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) {
+    .home-hello {
+        padding-top: 30vh;
+        width: 50%;
+        margin: auto;
+    }
+
+    .home-download {
+        width: 220px;
+    }
 }
