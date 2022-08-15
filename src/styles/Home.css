@@ -4,7 +4,7 @@
 
 .home-hello {
     margin: auto;
-    padding-top: 20vh;
+    padding-top: 100px;
     margin: 0px 50px;
 }
 
@@ -15,7 +15,7 @@
 
 .home-name {
     display: block;
-    font-size: 60px;
+    font-size: 48px;
     font-weight: bold;
     color: #e2e2e2;
 }
@@ -40,6 +40,6 @@
     color: #00FF77;
     border-radius: 5px;
     padding: 25px;
-    width: 210px;
+    width: 220px;
     text-align: center;
 }
