@@ -13,6 +13,8 @@ import { translate } from './languages/translator';
 
 function App() {
 
+  const name = 'Leonardo Tosin';
+
   const iconList = Object.keys(Icons).filter(key => key !== "fa" && key !== "prefix").map(icon => Icons[icon]);
   library.add(...iconList)
 
@@ -22,29 +24,29 @@ function App() {
         <div className='bigline' />
         <div>
           <span className='vertical-label'>{translate('label-contact')}</span>
-          <a href='https://www.linkedin.com/in/leonardo-tosin-9ba00568/?locale=en_US' target='_blank' ><div className='link-icon link-linked' /></a>
+          <a href='https://www.linkedin.com/in/leonardo-tosin-9ba00568/?locale=en_US' target='_blank' ><div className='link-icon link-linked'><span>LinkedIn</span></div></a>
           <div className='smallline' />
-          <a href='https://github.com/LToso/' target='_blank'><div className='link-icon link-git' /></a>
+          <a href='https://github.com/LToso/' target='_blank'><div className='link-icon link-git'><span>GitHub</span></div></a>
           <div className='smallline' />
-          <a href='https://www.instagram.com/leonardo.tosin/' target='_blank'><div className='link-icon link-insta' /></a>
+          <a href='https://www.instagram.com/leonardo.tosin/' target='_blank'><div className='link-icon link-insta'><span>Instagram</span></div></a>
           <div className='smallline' />
-          <a href='#' target='_blank'><div className='link-icon link-tel' /></a>
+          <a><div className='link-icon link-tel'><span>{'+55(41)999000017'}</span></div></a>
           <div className='smallline' />
-          <a href='#' target='_blank'><div className='link-icon link-email' /></a>
+          <a><div className='link-icon link-email'><span>leotosin99@hotmail.com</span></div></a>
         </div>
         <div className='smallline' />
       </div>
       <div className='menus'>
         <div className='smallline' />
         <div>
-          <span className='vertical-label'>{translate('label-menu')}</span>  
-          <a href='#home' ><div className='menu-icon'><FontAwesomeIcon icon='house' /></div></a>
+          <span className='vertical-label'>{translate('label-menu')}</span>
+          <a href='#home' ><div className='menu-icon'><span>{translate('menu-home')}</span><FontAwesomeIcon icon='house'  /></div></a>
           <div className='smallline' />
-          <a href='#about' ><div className='menu-icon'><FontAwesomeIcon icon='user' /></div></a>
+          <a href='#about' ><div className='menu-icon'><span>{translate('menu-about')}</span><FontAwesomeIcon icon='user' /></div></a>
           <div className='smallline' />
-          <a href='#skills' ><div className='menu-icon'><FontAwesomeIcon icon='code' /></div></a>
+          <a href='#skills' ><div className='menu-icon'><span>{translate('menu-skills')}</span><FontAwesomeIcon icon='code' /></div></a>
           <div className='smallline' />
-          <a href='#contact' ><div className='menu-icon'><FontAwesomeIcon icon='code-branch' /></div></a>
+          <a href='#contact' ><div className='menu-icon'><span>{translate('menu-projects')}</span><FontAwesomeIcon icon='code-branch' /></div></a>
         </div>
         <div className='bigline' />
       </div>
@@ -54,7 +56,7 @@ function App() {
             Hi there, I'm
           </span>
           <span className='home-name'>
-            Leonardo Tosin
+            {name}
           </span>
           <span className='home-pos-name highlight'>
             Fullstack Developer & Agile Specialist
@@ -71,7 +73,7 @@ function App() {
             </div>
           </div>
           <ul class="circles">
-            <li /><li /><li /><li /><li /><li /><li /><li /><li /><li />
+            <li>{'width:'}</li><li>{'function()'}</li><li>{'if {'}</li><li>{'</div>'}</li><li>{'} else {'}</li><li>{'.map('}</li><li>{'</>'}</li><li>{'return;'}</li><li>{'<span>'}</li><li>{'display: flex'}</li>
           </ul>
         </div>
         <div className='next-page-container'>

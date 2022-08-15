@@ -87,6 +87,20 @@
   border: none;
 }
 
+.link-icon:hover span {
+  display: inline-block;
+}
+
+.link-icon span {
+  display: none;
+  margin-left: 50px;
+  margin-top: 2px;
+  background-color: #00FF77;
+  padding: 5px 15px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
 .menu-icon {
   border-radius: 50%;
   background-color: #00FF77;
@@ -94,6 +108,22 @@
   text-align: center;
   padding: 6px 7px;
   color: #02132b;
+}
+
+.menu-icon:hover span {
+  display: inline-block;
+}
+
+.menu-icon span {
+  position: absolute;
+  right: 50px;
+  margin-top: -2px;
+  display: none;
+  background-color: #00FF77;
+  padding: 5px 15px;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: right;
 }
 
 .vertical-label {
