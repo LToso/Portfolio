@@ -1,4 +1,3 @@
-
 .highlight {
   color: #00FF77;
   font-weight: bold;
@@ -22,4 +21,97 @@
   padding-right: 7px;
 }
 
+.links {
+  position: fixed;
+  height: 100vh;
+  z-index: 999;
+  left: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
+
+.menus {
+  position: fixed;
+  height: 100vh;
+  z-index: 999;
+  right: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.link-insta {
+  background: url('./../imgs/instagram.png') no-repeat;
+}
+
+.link-git {
+  background: url('./../imgs/github.png') no-repeat;
+}
+
+.link-linked {
+  background: url('./../imgs/linkedin.png') no-repeat;
+}
+
+.link-tel {
+  background: url('./../imgs/phone.png') no-repeat;
+}
+
+.link-email {
+  background: url('./../imgs/email.png') no-repeat;
+}
+
+.bigline {
+  width: 1px;
+  height: 10px;
+  background-color: #00FF77;
+  margin: auto;
+  height: 100%;
+}
+
+.smallline {
+  width: 1px;
+  height: 30px;
+  background-color: #00FF77;
+  margin: auto;
+}
+
+.link-icon {
+  background-size: 100%;
+  width: 36px;
+  height: 36px;
+  border: none;
+}
+
+.menu-icon {
+  border-radius: 50%;
+  background-color: #00FF77;
+  font-size: 18px;
+  text-align: center;
+  padding: 6px 7px;
+  color: #02132b;
+}
+
+.vertical-label {
+  transform: rotate(270deg);
+  display: block;
+  width: 82px;
+  color: #00FF77;
+  position: absolute;
+  left: -25px;
+  top: 45vh;
+}
+
+@media (max-width: 768px) {
+  .links {
+    display: none;
+  }
+
+  .menus {
+    display: none;
+  }
+}

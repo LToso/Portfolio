@@ -24,7 +24,8 @@ const english = (id) => {
         case ('menu-about'): return 'About';
         case ('menu-skills'): return 'Skills';
         case ('menu-projects'): return 'Projects';
-        case ('menu-contact'): return 'Contact';
+        case ('label-contact'): return 'social contact';
+        case ('label-menu'): return 'navigation menu';
         case ('home-resume'): return 'Download Resume';
         case ('next-about'): return 'about me';
         default: return '-';

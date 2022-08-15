@@ -2,7 +2,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import * as Icons from '@fortawesome/free-solid-svg-icons';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import './styles/App.css';
-import './styles/Menu.css';
 import './styles/Home.css';
 import './styles/About.css';
 import './styles/Skills.css';
@@ -19,12 +18,35 @@ function App() {
 
   return (
     <div>
-      <div id='menu'>
-        <a href='#home' className='menu-item'><FontAwesomeIcon icon='house' /><span>{translate('menu-home')}</span></a>
-        <a href='#about' className='menu-item'><FontAwesomeIcon icon='circle-info' /><span>{translate('menu-about')}</span></a>
-        <a href='#skills' className='menu-item'><FontAwesomeIcon icon='code' /><span>{translate('menu-skills')}</span></a>
-        <a href='#projects' className='menu-item'><FontAwesomeIcon icon='code-branch' /><span>{translate('menu-projects')}</span></a>
-        <a href='#contact' className='menu-item'><FontAwesomeIcon icon='envelope' /><span>{translate('menu-contact')}</span></a>
+      <div className='links'>
+        <div className='bigline' />
+        <div>
+          <span className='vertical-label'>{translate('label-contact')}</span>
+          <a href='https://www.linkedin.com/in/leonardo-tosin-9ba00568/?locale=en_US' target='_blank' ><div className='link-icon link-linked' /></a>
+          <div className='smallline' />
+          <a href='https://github.com/LToso/' target='_blank'><div className='link-icon link-git' /></a>
+          <div className='smallline' />
+          <a href='https://www.instagram.com/leonardo.tosin/' target='_blank'><div className='link-icon link-insta' /></a>
+          <div className='smallline' />
+          <a href='#' target='_blank'><div className='link-icon link-tel' /></a>
+          <div className='smallline' />
+          <a href='#' target='_blank'><div className='link-icon link-email' /></a>
+        </div>
+        <div className='smallline' />
+      </div>
+      <div className='menus'>
+        <div className='smallline' />
+        <div>
+          <span className='vertical-label'>{translate('label-menu')}</span>  
+          <a href='#home' ><div className='menu-icon'><FontAwesomeIcon icon='house' /></div></a>
+          <div className='smallline' />
+          <a href='#about' ><div className='menu-icon'><FontAwesomeIcon icon='user' /></div></a>
+          <div className='smallline' />
+          <a href='#skills' ><div className='menu-icon'><FontAwesomeIcon icon='code' /></div></a>
+          <div className='smallline' />
+          <a href='#contact' ><div className='menu-icon'><FontAwesomeIcon icon='code-branch' /></div></a>
+        </div>
+        <div className='bigline' />
       </div>
       <section id='home' className='area'>
         <div className='home-hello '>

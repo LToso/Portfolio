@@ -68,7 +68,7 @@
 /* Media Query for Tablets Ipads portrait mode */
 @media (min-width: 768px) {
     .home-hello {
-        padding-top: 30vh;
+        padding-top: 32vh;
         width: 50%;
         margin: auto;
     }
