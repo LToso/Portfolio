@@ -40,7 +40,7 @@ function App() {
         <div className='smallline' />
         <div>
           <span className='vertical-label'>{translate('label-menu')}</span>
-          <a href='#home' ><div className='menu-icon'><span>{translate('menu-home')}</span><FontAwesomeIcon icon='house'  /></div></a>
+          <a href='#home' ><div className='menu-icon'><span>{translate('menu-home')}</span><FontAwesomeIcon icon='house' /></div></a>
           <div className='smallline' />
           <a href='#about' ><div className='menu-icon'><span>{translate('menu-about')}</span><FontAwesomeIcon icon='user' /></div></a>
           <div className='smallline' />
