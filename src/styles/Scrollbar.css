@@ -10,5 +10,5 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #00FF77;
+    background: var(--green);
 }

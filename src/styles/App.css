@@ -1,43 +1,25 @@
 .highlight {
-  color: #00FF77;
+  color: var(--green);
   font-weight: bold;
-}
-
-.next-page-container {
-  width: 100%;
-  position: absolute;
-  bottom: 3vh;
-}
-
-.next-page {
-  width: 300px;
-  margin: auto;
-  text-align: center;
-  color: #FFF;
-  cursor: pointer;
-}
-
-.next-page svg {
-  padding-right: 7px;
 }
 
 .links {
   position: fixed;
+  bottom: 0px;
   height: 100vh;
   z-index: 999;
-  left: 80px;
+  left: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-
 .menus {
   position: fixed;
   height: 100vh;
   z-index: 999;
-  right: 80px;
+  right: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -68,7 +50,7 @@
 .bigline {
   width: 1px;
   height: 10px;
-  background-color: #00FF77;
+  background-color: var(--green);
   margin: auto;
   height: 100%;
 }
@@ -76,7 +58,7 @@
 .smallline {
   width: 1px;
   height: 30px;
-  background-color: #00FF77;
+  background-color: var(--green);
   margin: auto;
 }
 
@@ -95,7 +77,7 @@
   display: none;
   margin-left: 50px;
   margin-top: 2px;
-  background-color: #00FF77;
+  background-color: var(--green);
   padding: 5px 15px;
   font-weight: bold;
   font-size: 14px;
@@ -103,7 +85,7 @@
 
 .menu-icon {
   border-radius: 50%;
-  background-color: #00FF77;
+  background-color: var(--green);
   font-size: 18px;
   text-align: center;
   padding: 6px 7px;
@@ -119,7 +101,7 @@
   right: 50px;
   margin-top: -2px;
   display: none;
-  background-color: #00FF77;
+  background-color: var(--green);
   padding: 5px 15px;
   font-weight: bold;
   font-size: 14px;
@@ -130,10 +112,23 @@
   transform: rotate(270deg);
   display: block;
   width: 82px;
-  color: #00FF77;
+  color: var(--green);
   position: absolute;
   left: -25px;
   top: 45vh;
+}
+
+.page-title {
+  color: var(--gray);
+  font-weight: bold;
+  padding: 10px 0px;
+  margin-bottom: 20px;
+}
+
+.page-title svg {
+  color: var(--green);
+  padding-right: 10px;
+  margin-top: 20px;
 }
 
 @media (max-width: 768px) {
@@ -145,3 +140,4 @@
     display: none;
   }
 }
+

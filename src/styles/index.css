@@ -1,6 +1,20 @@
+:root {
+  --blue: #02132b;
+  --green: #00FF77;
+  --cyan: #61892F;
+  --gray: #d8d8d8;
+  --white: #FFFFFF;
+  /* --blue: #02132b;
+  --green: #00FF77;
+  --cyan: #00FFB3;
+  --gray: #c4c4c4;
+  --white: #FFFFFF; */
+}
+
 body {
   margin: 0;
   font-family: 'Manrope', sans-serif;
+  background-color: var(--blue);
 }
 
 * {

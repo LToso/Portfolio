@@ -27,7 +27,9 @@ const english = (id) => {
         case ('label-contact'): return 'social contact';
         case ('label-menu'): return 'navigation menu';
         case ('home-resume'): return 'Download Resume';
-        case ('next-about'): return 'about me';
+        case ('page-about'): return 'About me';
+        case ('page-skills'): return 'Skills';
+        case ('page-projects'): return "Projects";
         default: return '-';
     }
 }

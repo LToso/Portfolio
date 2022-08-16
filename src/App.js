@@ -14,6 +14,26 @@ import { translate } from './languages/translator';
 function App() {
 
   const name = 'Leonardo Tosin';
+  const skills = [
+    { name: 'C#', icon: require('./imgs/logos/csharp.png') },
+    { name: 'Delphi', icon: require('./imgs/logos/delphi.png') },
+    { name: 'CSS', icon: require('./imgs/logos/css.png') },
+    { name: 'JavaScript', icon: require('./imgs/logos/js.png') },
+    { name: 'React', icon: require('./imgs/logos/react.png') },
+    { name: 'SQL Server', icon: require('./imgs/logos/sqlserver.png') },
+    { name: 'MySQL', icon: require('./imgs/logos/mysql.png') },
+    { name: 'Unity', icon: require('./imgs/logos/unity.png') },
+    { name: 'Amazon AWS', icon: require('./imgs/logos/aws.png') },
+    { name: 'Jira', icon: require('./imgs/logos/jira.png') },
+    { name: 'Git', icon: require('./imgs/logos/git.png') },
+  ];
+
+  const pluses = [
+    { name: 'Project Management' },
+    { name: 'Agile Methodology' },
+    { name: 'Clean Code' },
+    { name: 'Seniority' },
+  ]
 
   const iconList = Object.keys(Icons).filter(key => key !== "fa" && key !== "prefix").map(icon => Icons[icon]);
   library.add(...iconList)
@@ -72,38 +92,55 @@ function App() {
               </span>
             </div>
           </div>
-          <ul class="circles">
+          <ul className="circles">
             <li>{'width:'}</li><li>{'function()'}</li><li>{'if {'}</li><li>{'</div>'}</li><li>{'} else {'}</li><li>{'.map('}</li><li>{'</>'}</li><li>{'return;'}</li><li>{'<span>'}</li><li>{'display: flex'}</li>
           </ul>
         </div>
-        <div className='next-page-container'>
-          <div className='next-page'>
-            <a href='#about'>
-              <FontAwesomeIcon icon='chevron-down' className='highlight' />
-              <span>{translate('next-about')}</span>
-            </a>
-          </div>
-        </div>
       </section>
       <section id='about'>
-        <div>
-          <div>
-            {translate('menu-about')}
+        <div className='about-container'>
+          <div className='page-title'>
+            <FontAwesomeIcon icon='user' /><span>{translate('page-about')}</span>
           </div>
-          <div>
-            <span>Blablabla</span>
-          </div>
-          <div>
-            Foto
+          <div className='about-presentation'>
+            <span className='about-photo' />
+            <span className='about-desc'>
+              <span>Hey! My name is <span className='highlight'>Leonardo</span> and I'm a <span className='highlight'>senior</span> developer living in Brazil. My love for coding dates back to 2008 when I started my <span className='highlight'>Systems Analysis and Development college</span>. Since then I have been creating applications for several large companies here in <span className='highlight'>Brazil.</span></span>
+              <br /><br />
+              <span>I love developing for the <span className='highlight'>web</span>, the satisfaction of seeing the pages taking shape and the users using it on a daily basis always <span className='highlight'>inspires me</span> to want to continue programming. Even after taking on a <span className='highlight'>project manager</span> role, I continued coding and supporting the team with technical solutions.</span>
+              <br /><br />
+              <span>I currently work as a project manager and tech lead at <span className='highlight'>IOB</span>, but I'm looking for a new experience abroad as a <span className='highlight'>web developer.</span></span>
+              <br /><br />
+              <span>Cheers! <span className='highlight'>Leonardo Tosin</span></span>
+            </span>
           </div>
         </div>
-
       </section>
       <section id='skills'>
-
+        <div className='skills-container'>
+          <div className='page-title'>
+            <FontAwesomeIcon icon='code' /><span>{translate('page-skills')}</span>
+          </div>
+          <div className='skills-list'>
+            {
+              skills.map(x =>
+                <div className='skill-box' key={x.name}>
+                  <img className='skill-icon' src={x.icon} />
+                  <div className='skill-name'>{x.name}</div>
+                </div>
+              )
+            }
+          </div>
+        </div>
       </section>
       <section id='projects'>
-
+        <div className='projects-container'>
+          <div className='page-title'>
+            <FontAwesomeIcon icon='code-branch' /><span>{translate('page-projects')}</span>
+          </div>
+          <div className='projects-list'>
+          </div>
+        </div>
       </section>
       <section id='contact'>
 

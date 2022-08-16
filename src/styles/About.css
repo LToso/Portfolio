@@ -1,5 +1,50 @@
-#about {
-    background-color: #111;
+.about-container {
+    width: 50%;
+    margin: 0px auto 30px auto;
+    color: var(--white);
+    padding: 0px 10px;
+}
+
+.about-presentation {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-photo {
+    background: url('./../imgs/profile.jpg') no-repeat var(--gray) center;
+    background-size: 100%;
+    width: 310px;
+    height: 310px;
+    display: block;
+    border: 5px solid var(--gray);
+    margin-bottom: 20px;
+}
+
+.about-desc {
+    display: block;
     width: 100%;
-    height: 100vh;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+    .about-container {
+        width: 85%;
+    }
+
+    .about-presentation {
+        display: block;
+    }
+}
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+    .about-container {
+        width: 90%;
+    }
+
+    .about-presentation {
+        display: block;
+    }
 }

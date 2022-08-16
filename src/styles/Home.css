@@ -15,7 +15,7 @@
     display: block;
     font-size: 48px;
     font-weight: bold;
-    color: #e2e2e2;
+    color: var(--white);
 }
 
 .home-pos-name {
@@ -25,7 +25,7 @@
 }
 
 .home-desc {
-    color: #c4c4c4;
+    color: var(--gray);
 }
 
 .home-resume {
@@ -34,8 +34,8 @@
 
 .home-download {
     cursor: pointer;
-    border: 1px solid #00FF77;
-    color: #00FF77;
+    border: 1px solid var(--green);
+    color: var(--green);
     border-radius: 5px;
     padding: 25px 0px;
     text-align: center;
