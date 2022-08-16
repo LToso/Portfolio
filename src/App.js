@@ -86,11 +86,13 @@ function App() {
             Currently working at <b className='highlight'>IOB</b> as a <b className='highlight'>Project Manager/Tech Lead</b>.
           </span>
           <div className='home-resume'>
-            <div className='home-download'>
-              <span>
-                {translate('home-resume')}
-              </span>
-            </div>
+            <a href={require('./imgs/resume.pdf')} download="Resume - Leonardo Tosin.pdf">
+              <div className='home-download'>
+                <span>
+                  {translate('home-resume')}
+                </span>
+              </div>
+            </a>
           </div>
           <ul className="circles">
             <li>{'width:'}</li><li>{'function()'}</li><li>{'if {'}</li><li>{'</div>'}</li><li>{'} else {'}</li><li>{'.map('}</li><li>{'</>'}</li><li>{'return;'}</li><li>{'<span>'}</li><li>{'display: flex'}</li>
