@@ -72,7 +72,7 @@ function App() {
           <div className='smallline' />
           <a href='#skills' ><div className='menu-icon'><span>{translate('menu-skills')}</span><FontAwesomeIcon icon='code' /></div></a>
           <div className='smallline' />
-          <a href='#contact' ><div className='menu-icon'><span>{translate('menu-projects')}</span><FontAwesomeIcon icon='code-branch' /></div></a>
+          <a href='#projects' ><div className='menu-icon'><span>{translate('menu-projects')}</span><FontAwesomeIcon icon='code-branch' /></div></a>
         </div>
         <div className='bigline' />
       </div>

@@ -5,7 +5,7 @@ export const translate = (id) => {
     switch (language) {
         case ('PT-BR'): return portuguese(id);
         case ('EN-US'): return english(id);
-        default: return portuguese(id);
+        default: return english(id);
     }
 }
 
