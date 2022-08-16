@@ -26,6 +26,13 @@
   flex-direction: column;
 }
 
+.link-brasil {
+  background: url('./../imgs/brazil.png') no-repeat;
+}
+
+.link-eua {
+  background: url('./../imgs/eua.png') no-repeat;
+}
 
 .link-insta {
   background: url('./../imgs/instagram.png') no-repeat;
@@ -67,6 +74,7 @@
   width: 36px;
   height: 36px;
   border: none;
+  cursor: pointer;
 }
 
 .link-icon:hover span {
@@ -140,4 +148,3 @@
     display: none;
   }
 }
-

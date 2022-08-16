@@ -10,10 +10,12 @@ import './styles/Contact.css';
 import './styles/Background.css';
 import './styles/Scrollbar.css';
 import { translate } from './languages/translator';
+import { useState } from 'react';
 
 function App() {
 
   const name = 'Leonardo Tosin';
+  const [refresh, setRefresh] = useState(false);
   const skills = [
     { name: 'C#', icon: require('./imgs/logos/csharp.png') },
     { name: 'Delphi', icon: require('./imgs/logos/delphi.png') },
@@ -28,12 +30,10 @@ function App() {
     { name: 'Git', icon: require('./imgs/logos/git.png') },
   ];
 
-  const pluses = [
-    { name: 'Project Management' },
-    { name: 'Agile Methodology' },
-    { name: 'Clean Code' },
-    { name: 'Seniority' },
-  ]
+  const changeLanguage = (e) => {
+    sessionStorage.setItem('language', e);
+    setRefresh(!refresh);
+  }
 
   const iconList = Object.keys(Icons).filter(key => key !== "fa" && key !== "prefix").map(icon => Icons[icon]);
   library.add(...iconList)
@@ -41,6 +41,12 @@ function App() {
   return (
     <div>
       <div className='links'>
+        <div>
+          <div className='smallline' />
+          <a onClick={() => changeLanguage('PT-BR')}><div className='link-icon link-brasil'><span>PT/BR</span></div></a>
+          <div className='smallline' />
+          <a onClick={() => changeLanguage('EN-US')}><div className='link-icon link-eua'><span>EN/US</span></div></a>
+        </div>
         <div className='bigline' />
         <div>
           <span className='vertical-label'>{translate('label-contact')}</span>
@@ -73,17 +79,16 @@ function App() {
       <section id='home' className='area'>
         <div className='home-hello '>
           <span className='home-pre-name highlight'>
-            Hi there, I'm
+            {translate('line1')}
           </span>
           <span className='home-name'>
             {name}
           </span>
           <span className='home-pos-name highlight'>
-            Fullstack Developer & Agile Specialist
+            {translate('line2')}
           </span>
           <span className='home-desc'>
-            Brazilian software engineer specialized in building (and sometimes designing) software experiences.
-            Currently working at <b className='highlight'>IOB</b> as a <b className='highlight'>Project Manager/Tech Lead</b>.
+            {translate('line3')}
           </span>
           <div className='home-resume'>
             <a href={require('./imgs/resume.pdf')} download="Resume - Leonardo Tosin.pdf">
@@ -107,13 +112,13 @@ function App() {
           <div className='about-presentation'>
             <span className='about-photo' />
             <span className='about-desc'>
-              <span>Hey! My name is <span className='highlight'>Leonardo</span> and I'm a <span className='highlight'>senior</span> developer living in Brazil. My love for coding dates back to 2008 when I started my <span className='highlight'>Systems Analysis and Development college</span>. Since then I have been creating applications for several large companies here in <span className='highlight'>Brazil.</span></span>
+              {translate('about1')}
               <br /><br />
-              <span>I love developing for the <span className='highlight'>web</span>, the satisfaction of seeing the pages taking shape and the users using it on a daily basis always <span className='highlight'>inspires me</span> to want to continue programming. Even after taking on a <span className='highlight'>project manager</span> role, I continued coding and supporting the team with technical solutions.</span>
+              {translate('about2')}
               <br /><br />
-              <span>I currently work as a project manager and tech lead at <span className='highlight'>IOB</span>, but I'm looking for a new experience abroad as a <span className='highlight'>web developer.</span></span>
+              {translate('about3')}
               <br /><br />
-              <span>Cheers! <span className='highlight'>Leonardo Tosin</span></span>
+              {translate('about4')}
             </span>
           </div>
         </div>
