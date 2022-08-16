@@ -28,6 +28,13 @@ const portuguese = (id) => {
         case ('page-about'): return 'Sobre mim';
         case ('page-skills'): return 'Hábilidades';
         case ('page-projects'): return "Projetos";
+        case ('project1-desc'): return "Inspirado em um dos maiores sites de recrutamentos de desenvolvedores do mundo, Code Heaven surgiu para suprir uma necessidade do mercado brasileiro de tecnologia, a busca de profissionais de qualidade.";
+        case ('project2-desc'): return "Meu portfolio pessoal.";
+        case ('project3-desc'): return "Software feito para escritorios de contábilidade, utilizado para facilitar a administração de vários setores e de multiplas empresas, desde a folha de pagamento e rotinas de recursos humanos, até importação de notas fiscais e obrigações fiscais governamentais.";
+        case ('project4-desc'): return "Site com KPIs extraidos diretamente do JIRA para uso diario da equipe de desenvolvimento, a necessidade surgiu pois o JIRA não entrega de maneira clara alguns dados relacionados a gestão de projetos, então foi criado essa plataforma para apoiar nessa analise.";
+        case ('project5-desc'): return "Software para controle de armazem e fornecedores.";
+        case ('project6-desc'): return "Bem-vindo aventureiro, teste sua habilidade de arqueiro nesse jogo desafiador que ira fazer você ganhar horas de muita diversão! Acerte todos os alvos, acione os mecanismos e evolua suas habilidades com o arco nesse divertido passa tempo criado especialmente para você.";
+        case ('project7-desc'): return "Nautical Life é um jogo de Simulador Náutico, onde você pode pescar, comprar um iate e alugar um monte de barcos de pesca para virar um magnata da pesca ao redor do mundo. Viaje de leste a oeste para pescar mais de 50 peixes diferentes, incluindo um Kraken!";        
         default: return '-';
     }
 }
@@ -51,6 +58,13 @@ const english = (id) => {
         case ('page-about'): return 'About me';
         case ('page-skills'): return 'Skills';
         case ('page-projects'): return "Projects";
+        case ('project1-desc'): return "Inspired by one of the largest developer recruitment sites in the world, Code Heaven emerged to meet a need in the Brazilian technology market, the search for quality professionals.";
+        case ('project2-desc'): return "This portfolio.";
+        case ('project3-desc'): return "Software made for accounting offices, used to facilitate the administration of various sectors and multiple companies, from payroll and human resources routines, to importing invoices and government tax obligations.";
+        case ('project4-desc'): return "Website with KPIs extracted directly from JIRA for daily use by the development team, the need arose because JIRA does not clearly deliver some data related to project management, so this platform was created to support this analysis.";
+        case ('project5-desc'): return "Software for warehouse and supplier control.";
+        case ('project6-desc'): return "Welcome adventurer, test your archer skill in this challenging game that will earn you hours of great fun! Hit all the targets, trigger the mechanisms and improve your bow skills in this fun time-lapse created especially for you.";
+        case ('project7-desc'): return "Nautical Life is an Nautical Simulator game, where you can fish, buy yourself a Yacht and hire a bunch of fishing boats to build a fishing Tycoon around the world. Travel from the east to the west to fish more than 50 different fishes, including a Kraken!";        
         default: return '-';
     }
 }

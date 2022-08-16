@@ -146,11 +146,198 @@ function App() {
             <FontAwesomeIcon icon='code-branch' /><span>{translate('page-projects')}</span>
           </div>
           <div className='projects-list'>
+
+            <div className='project-box'>
+              <span className='project-box-title highlight'>Leonardo Tosin - Code Heaven</span>
+              <div className='project-box-description'>
+                <div className='project-box-header'>
+                  <img src={require('./imgs/projects/code.png')} className='project-box-picture' />
+                </div>
+                <div className='project-box-resume'>
+                  <span>{translate('project1-desc')}</span>
+                </div>
+                <div className='project-box-stacks'>
+                  <div className='project-box-stack'>
+                    <FontAwesomeIcon icon='code' />
+                    <span>React</span>
+                  </div>
+                  <div className='project-box-stack'>
+                    <FontAwesomeIcon icon='code' />
+                    <span>C#</span>
+                  </div>
+                  <div className='project-box-stack'>
+                    <FontAwesomeIcon icon='database' />
+                    <span>SQL Server</span>
+                  </div>
+                </div>
+                <div className='project-box-links'>
+                  <a href='https://ltoso.github.io/CodeHeaven/' target='_blank'><FontAwesomeIcon icon='up-right-from-square' alt='External Link' /> <span>Website</span></a>
+                  <a href='https://github.com/LToso/CodeHeaven/' target='_blank'><FontAwesomeIcon icon='up-right-from-square' alt='External Link' /> <span>Github</span></a>
+                </div>
+              </div>
+            </div>
+
+            <div className='project-box'>
+              <span className='project-box-title highlight'>IOB - Gestão Contábil</span>
+              <div className='project-box-description'>
+                <div className='project-box-header'>
+                  <img src={require('./imgs/projects/iob.png')} className='project-box-picture' />
+                </div>
+                <div className='project-box-resume'>
+                  <span>{translate('project3-desc')}</span>
+                </div>
+                <div className='project-box-stacks'>
+                  <div className='project-box-stack'>
+                    <FontAwesomeIcon icon='code' />
+                    <span>Delphi</span>
+                  </div>
+                  <div className='project-box-stack'>
+                    <FontAwesomeIcon icon='code' />
+                    <span>C#</span>
+                  </div>
+                  <div className='project-box-stack'>
+                    <FontAwesomeIcon icon='database' />
+                    <span>SQL Server</span>
+                  </div>
+                  <div className='project-box-stack'>
+                    <FontAwesomeIcon icon='database' />
+                    <span>MySQL</span>
+                  </div>
+                </div>
+                <div className='project-box-links'>
+                  <a href='https://tech.iob.com.br/' target='_blank'><FontAwesomeIcon icon='up-right-from-square' alt='External Link' /> <span>Website</span></a>
+                </div>
+              </div>
+            </div>
+
+            <div className='project-box'>
+              <span className='project-box-title highlight'>IOB - Smart KPIs</span>
+              <div className='project-box-description'>
+                <div className='project-box-header'>
+                  <img src={require('./imgs/projects/smart.png')} className='project-box-picture' />
+                </div>
+                <div className='project-box-resume'>
+                  <span>{translate('project4-desc')}</span>
+                </div>
+                <div className='project-box-stacks'>
+                  <div className='project-box-stack'>
+                    <FontAwesomeIcon icon='code' />
+                    <span>React</span>
+                  </div>
+                  <div className='project-box-stack'>
+                    <FontAwesomeIcon icon='code' />
+                    <span>C#</span>
+                  </div>
+                  <div className='project-box-stack'>
+                    <FontAwesomeIcon icon='database' />
+                    <span>SQL Server</span>
+                  </div>
+                </div>
+                <div className='project-box-links'>
+                  <a href='https://tech.iob.com.br/' target='_blank'><FontAwesomeIcon icon='up-right-from-square' alt='External Link' /> <span>Website</span></a>
+                </div>
+              </div>
+            </div>
+
+            <div className='project-box'>
+              <span className='project-box-title highlight'>Ausland - Goldway WMS</span>
+              <div className='project-box-description'>
+                <div className='project-box-header'>
+                  <img src={require('./imgs/projects/ausland.webp')} className='project-box-picture' />
+                </div>
+                <div className='project-box-resume'>
+                  <span>{translate('project5-desc')}</span>
+                </div>
+                <div className='project-box-stacks'>
+                  <div className='project-box-stack'>
+                    <FontAwesomeIcon icon='code' />
+                    <span>C#</span>
+                  </div>
+                  <div className='project-box-stack'>
+                    <FontAwesomeIcon icon='database' />
+                    <span>SQL Server</span>
+                  </div>
+                </div>
+                <div className='project-box-links'>
+                  <a href='https://ausland.com.br/erp/wms/' target='_blank'><FontAwesomeIcon icon='up-right-from-square' alt='External Link' /> <span>Website</span></a>
+                </div>
+              </div>
+            </div>
+
+            <div className='project-box'>
+              <span className='project-box-title highlight'>Alpha Quest - Nautical Life</span>
+              <div className='project-box-description'>
+                <div className='project-box-header'>
+                  <img src={require('./imgs/projects/nautical.webp')} className='project-box-picture' />
+                </div>
+                <div className='project-box-resume'>
+                  <span>{translate('project7-desc')}</span>
+                </div>
+                <div className='project-box-stacks'>
+                  <div className='project-box-stack'>
+                    <FontAwesomeIcon icon='code' />
+                    <span>Unity</span>
+                  </div>
+                  <div className='project-box-stack'>
+                    <FontAwesomeIcon icon='code' />
+                    <span>C#</span>
+                  </div>
+                </div>
+                <div className='project-box-links'>
+                  <a href='https://play.google.com/store/apps/details?id=com.alphaquest.nauticallife' target='_blank'><FontAwesomeIcon icon='up-right-from-square' alt='External Link' /> <span>Website</span></a>
+                </div>
+              </div>
+            </div>
+
+            <div className='project-box'>
+              <span className='project-box-title highlight'>Alpha Quest - Archer Quest</span>
+              <div className='project-box-description'>
+                <div className='project-box-header'>
+                  <img src={require('./imgs/projects/archer.webp')} className='project-box-picture' />
+                </div>
+                <div className='project-box-resume'>
+                  <span>{translate('project6-desc')}</span>
+                </div>
+                <div className='project-box-stacks'>
+                  <div className='project-box-stack'>
+                    <FontAwesomeIcon icon='code' />
+                    <span>Unity</span>
+                  </div>
+                  <div className='project-box-stack'>
+                    <FontAwesomeIcon icon='code' />
+                    <span>C#</span>
+                  </div>
+                </div>
+                <div className='project-box-links'>
+                  <a href='https://play.google.com/store/apps/details?id=com.alphaquest.archerquest' target='_blank'><FontAwesomeIcon icon='up-right-from-square' alt='External Link' /> <span>Website</span></a>
+                </div>
+              </div>
+            </div>
+
+            <div className='project-box'>
+              <span className='project-box-title highlight'>Leonardo Tosin - Portfolio</span>
+              <div className='project-box-description'>
+                <div className='project-box-header'>
+                  <img src={require('./imgs/projects/port.png')} className='project-box-picture' />
+                </div>
+                <div className='project-box-resume'>
+                  <span>{translate('project2-desc')}</span>
+                </div>
+                <div className='project-box-stacks'>
+                  <div className='project-box-stack'>
+                    <FontAwesomeIcon icon='code' />
+                    <span>React</span>
+                  </div>
+                </div>
+                <div className='project-box-links'>
+                  <a href='https://ltoso.github.io/Portfolio/' target='_blank'><FontAwesomeIcon icon='up-right-from-square' alt='External Link' /> <span>Website</span></a>
+                  <a href='https://github.com/LToso/Portfolio' target='_blank'><FontAwesomeIcon icon='up-right-from-square' alt='External Link' /> <span>Github</span></a>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
-      </section>
-      <section id='contact'>
-
       </section>
     </div>
   );

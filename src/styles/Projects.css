@@ -1,8 +1,81 @@
 .projects-container {
   width: 50%;
-  margin: 0px auto 30px auto;
+  margin: 0px auto 0px auto;
   color: var(--white);
-  padding: 0px 10px;
+}
+
+.projects-list {
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.project-box {
+  border-radius: 5px;
+  width: 100%;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+.project-box-description {
+  background-color: var(--darker-blue);
+  border-radius: 5px;
+  padding: 20px;
+  border-bottom: 5px solid var(--green);
+}
+
+.project-box-header {
+  background-color: var(--light-gray);
+  border-radius: 5px;
+}
+
+.project-box-picture {
+  width: 100%;
+}
+
+.project-box-title {
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-size: 16px;
+  display: block;
+}
+
+.project-box-resume {
+  margin: auto;
+  width: 100%;
+  padding: 30px 0px 20px 0px;
+  background-color: var(--darker-blue);
+  font-size: 16px;
+}
+
+.project-box-links {
+  margin-top: 10px;
+  font-size: 14px;
+  color: var(--light-gray);
+}
+
+.project-box-links svg {
+  padding-right: 3px;
+}
+
+.project-box-links span {
+  padding-right: 20px;
+}
+
+.project-box-stacks {
+  color: var(--green);
+}
+
+.project-box-stack {
+  display: inline-block;
+  padding-right: 25px;
+  border: 1px solid --var(--light-gray);
+  height: 30px;
+}
+
+.project-box-stack svg {
+  padding: 0px 5px 0px 0px;
 }
 
 /* Media Query for Mobile Devices */
@@ -15,6 +88,7 @@
 /* Media Query for low resolution  Tablets, Ipads */
 @media (min-width: 481px) and (max-width: 767px) {
   .projects-container {
-    width: 90%;
+    width: 85%;
   }
+
 }
