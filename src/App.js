@@ -21,6 +21,7 @@ function App() {
     { name: 'Delphi', icon: require('./imgs/logos/delphi.png') },
     { name: 'CSS', icon: require('./imgs/logos/css.png') },
     { name: 'JavaScript', icon: require('./imgs/logos/js.png') },
+    { name: 'TypeScript', icon: require('./imgs/logos/type.png') },
     { name: 'React', icon: require('./imgs/logos/react.png') },
     { name: 'SQL Server', icon: require('./imgs/logos/sqlserver.png') },
     { name: 'MySQL', icon: require('./imgs/logos/mysql.png') },
