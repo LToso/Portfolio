@@ -156,19 +156,11 @@ function App() {
                 </div>
                 <div className='project-box-resume'>
                   <span>{translate('project1-desc')}</span>
-                </div>
-                <div className='project-box-stacks'>
-                  <div className='project-box-stack'>
-                    <FontAwesomeIcon icon='code' />
-                    <span>React</span>
-                  </div>
-                  <div className='project-box-stack'>
-                    <FontAwesomeIcon icon='code' />
-                    <span>C#</span>
-                  </div>
-                  <div className='project-box-stack'>
-                    <FontAwesomeIcon icon='database' />
-                    <span>SQL Server</span>
+                  <div className='project-box-occup'>
+                    {translate('tec-label')}
+                    <span><FontAwesomeIcon icon='code' />React</span>
+                    <span><FontAwesomeIcon icon='code' />C#</span>
+                    <span><FontAwesomeIcon icon='database' />SQL Server</span>
                   </div>
                 </div>
                 <div className='project-box-links'>
@@ -186,23 +178,12 @@ function App() {
                 </div>
                 <div className='project-box-resume'>
                   <span>{translate('project3-desc')}</span>
-                </div>
-                <div className='project-box-stacks'>
-                  <div className='project-box-stack'>
-                    <FontAwesomeIcon icon='code' />
-                    <span>Delphi</span>
-                  </div>
-                  <div className='project-box-stack'>
-                    <FontAwesomeIcon icon='code' />
-                    <span>C#</span>
-                  </div>
-                  <div className='project-box-stack'>
-                    <FontAwesomeIcon icon='database' />
-                    <span>SQL Server</span>
-                  </div>
-                  <div className='project-box-stack'>
-                    <FontAwesomeIcon icon='database' />
-                    <span>MySQL</span>
+                  <div className='project-box-occup'>
+                    {translate('tec-label')}
+                    <span><FontAwesomeIcon icon='code' />Delphi</span>
+                    <span><FontAwesomeIcon icon='code' />C#</span>
+                    <span><FontAwesomeIcon icon='database' />SQL Server</span>
+                    <span><FontAwesomeIcon icon='database' />MySQL</span>
                   </div>
                 </div>
                 <div className='project-box-links'>
@@ -219,19 +200,11 @@ function App() {
                 </div>
                 <div className='project-box-resume'>
                   <span>{translate('project4-desc')}</span>
-                </div>
-                <div className='project-box-stacks'>
-                  <div className='project-box-stack'>
-                    <FontAwesomeIcon icon='code' />
-                    <span>React</span>
-                  </div>
-                  <div className='project-box-stack'>
-                    <FontAwesomeIcon icon='code' />
-                    <span>C#</span>
-                  </div>
-                  <div className='project-box-stack'>
-                    <FontAwesomeIcon icon='database' />
-                    <span>SQL Server</span>
+                  <div className='project-box-occup'>
+                    {translate('tec-label')}
+                    <span><FontAwesomeIcon icon='code' />React</span>
+                    <span><FontAwesomeIcon icon='code' />C#</span>
+                    <span><FontAwesomeIcon icon='database' />SQL Server</span>
                   </div>
                 </div>
                 <div className='project-box-links'>
@@ -248,15 +221,10 @@ function App() {
                 </div>
                 <div className='project-box-resume'>
                   <span>{translate('project5-desc')}</span>
-                </div>
-                <div className='project-box-stacks'>
-                  <div className='project-box-stack'>
-                    <FontAwesomeIcon icon='code' />
-                    <span>C#</span>
-                  </div>
-                  <div className='project-box-stack'>
-                    <FontAwesomeIcon icon='database' />
-                    <span>SQL Server</span>
+                  <div className='project-box-occup'>
+                    {translate('tec-label')}
+                    <span><FontAwesomeIcon icon='code' />C#</span>
+                    <span><FontAwesomeIcon icon='database' />SQL Server</span>
                   </div>
                 </div>
                 <div className='project-box-links'>
@@ -273,15 +241,10 @@ function App() {
                 </div>
                 <div className='project-box-resume'>
                   <span>{translate('project7-desc')}</span>
-                </div>
-                <div className='project-box-stacks'>
-                  <div className='project-box-stack'>
-                    <FontAwesomeIcon icon='code' />
-                    <span>Unity</span>
-                  </div>
-                  <div className='project-box-stack'>
-                    <FontAwesomeIcon icon='code' />
-                    <span>C#</span>
+                  <div className='project-box-occup'>
+                    {translate('tec-label')}
+                    <span><FontAwesomeIcon icon='code' />Unity</span>
+                    <span><FontAwesomeIcon icon='code' />C#</span>
                   </div>
                 </div>
                 <div className='project-box-links'>
@@ -298,41 +261,14 @@ function App() {
                 </div>
                 <div className='project-box-resume'>
                   <span>{translate('project6-desc')}</span>
-                </div>
-                <div className='project-box-stacks'>
-                  <div className='project-box-stack'>
-                    <FontAwesomeIcon icon='code' />
-                    <span>Unity</span>
-                  </div>
-                  <div className='project-box-stack'>
-                    <FontAwesomeIcon icon='code' />
-                    <span>C#</span>
+                  <div className='project-box-occup'>
+                    {translate('tec-label')}
+                    <span><FontAwesomeIcon icon='code' />Unity</span>
+                    <span><FontAwesomeIcon icon='code' />C#</span>
                   </div>
                 </div>
                 <div className='project-box-links'>
                   <a href='https://play.google.com/store/apps/details?id=com.alphaquest.archerquest' target='_blank'><FontAwesomeIcon icon='up-right-from-square' alt='External Link' /> <span>Website</span></a>
-                </div>
-              </div>
-            </div>
-
-            <div className='project-box'>
-              <span className='project-box-title highlight'>Leonardo Tosin - Portfolio</span>
-              <div className='project-box-description'>
-                <div className='project-box-header'>
-                  <img src={require('./imgs/projects/port.png')} className='project-box-picture' />
-                </div>
-                <div className='project-box-resume'>
-                  <span>{translate('project2-desc')}</span>
-                </div>
-                <div className='project-box-stacks'>
-                  <div className='project-box-stack'>
-                    <FontAwesomeIcon icon='code' />
-                    <span>React</span>
-                  </div>
-                </div>
-                <div className='project-box-links'>
-                  <a href='https://ltoso.github.io/Portfolio/' target='_blank'><FontAwesomeIcon icon='up-right-from-square' alt='External Link' /> <span>Website</span></a>
-                  <a href='https://github.com/LToso/Portfolio' target='_blank'><FontAwesomeIcon icon='up-right-from-square' alt='External Link' /> <span>Github</span></a>
                 </div>
               </div>
             </div>

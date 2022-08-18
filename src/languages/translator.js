@@ -28,13 +28,73 @@ const portuguese = (id) => {
         case ('page-about'): return 'Sobre mim';
         case ('page-skills'): return 'Hábilidades';
         case ('page-projects'): return "Projetos";
-        case ('project1-desc'): return "Inspirado em um dos maiores sites de recrutamentos de desenvolvedores do mundo, Code Heaven surgiu para suprir uma necessidade do mercado brasileiro de tecnologia, a busca de profissionais de qualidade.";
-        case ('project2-desc'): return "Meu portfolio pessoal.";
-        case ('project3-desc'): return "Software feito para escritorios de contábilidade, utilizado para facilitar a administração de vários setores e de multiplas empresas, desde a folha de pagamento e rotinas de recursos humanos, até importação de notas fiscais e obrigações fiscais governamentais.";
-        case ('project4-desc'): return "Site com KPIs extraidos diretamente do JIRA para uso diario da equipe de desenvolvimento, a necessidade surgiu pois o JIRA não entrega de maneira clara alguns dados relacionados a gestão de projetos, então foi criado essa plataforma para apoiar nessa analise.";
-        case ('project5-desc'): return "Software para controle de armazem e fornecedores.";
-        case ('project6-desc'): return "Bem-vindo aventureiro, teste sua habilidade de arqueiro nesse jogo desafiador que ira fazer você ganhar horas de muita diversão! Acerte todos os alvos, acione os mecanismos e evolua suas habilidades com o arco nesse divertido passa tempo criado especialmente para você.";
-        case ('project7-desc'): return "Nautical Life é um jogo de Simulador Náutico, onde você pode pescar, comprar um iate e alugar um monte de barcos de pesca para virar um magnata da pesca ao redor do mundo. Viaje de leste a oeste para pescar mais de 50 peixes diferentes, incluindo um Kraken!";        
+        case ('tec-label'): return "Tecnologias Utilizadas:";
+        case ('project1-desc'): return <div>
+            <span>
+                Inspirado em um dos maiores sites de recrutamentos de desenvolvedores do mundo, Code Heaven surgiu para suprir uma necessidade do mercado brasileiro de tecnologia, a busca de profissionais de qualidade.
+            </span>
+            <span className="project-box-occup">
+                Áreas de Atuação: <span>Recrutamento</span><span>Recursos Humanos</span><span>Web</span>
+            </span>
+            <span className="project-box-occup">
+                Impacto no Mercado: <span>Beta, ainda não lançado</span>
+            </span>
+        </div>;
+        case ('project3-desc'): return <div>
+            <span>
+                Software feito para escritorios de contábilidade, utilizado para facilitar a administração de vários setores e de multiplas empresas, desde a folha de pagamento e rotinas de recursos humanos, até importação de notas fiscais e obrigações fiscais governamentais.
+            </span>
+            <span className="project-box-occup">
+                Áreas de Atuação: <span>Contábilidade</span><span>Recursos Humanos</span><span>Fiscal</span><span>Controle Patrimonial</span><span>Desktop</span>
+            </span>
+            <span className="project-box-occup">
+                Impacto no Mercado: <span>15 mil escritorios de contábilidade no Brazil</span>
+            </span>
+        </div>;
+        case ('project4-desc'): return <div>
+            <span>
+                Site com KPIs extraidos diretamente do JIRA para uso diario da equipe de desenvolvimento, a necessidade surgiu pois o JIRA não entrega de maneira clara alguns dados relacionados a gestão de projetos, então foi criado essa plataforma para apoiar nessa analise.
+            </span>
+            <span className="project-box-occup">
+                Áreas de Atuação: <span>Gerenciamento de Projetos</span><span>KPIs</span><span>Web</span>
+            </span>
+            <span className="project-box-occup">
+                Impacto no Mercado: <span>12 equipes de desenvolvimento de software da empresa</span>
+            </span>
+        </div>;
+        case ('project5-desc'): return <div>
+            <span>
+                Software para controle de armazem e fornecedores.
+            </span>
+            <span className="project-box-occup">
+                Áreas de Atuação: <span>Gerenciamento de Armazens</span><span>Fornecedores</span>
+            </span>
+            <span className="project-box-occup">
+                Impacto no Mercado: <span>2 mil clientes no Brazil</span>
+            </span>
+        </div>;
+        case ('project6-desc'): return <div>
+            <span>
+                Bem-vindo aventureiro, teste sua habilidade de arqueiro nesse jogo desafiador que ira fazer você ganhar horas de muita diversão! Acerte todos os alvos, acione os mecanismos e evolua suas habilidades com o arco nesse divertido passa tempo criado especialmente para você.
+            </span>
+            <span className="project-box-occup">
+                Áreas de Atuação: <span>Entretenimento</span><span>Arco e Flexa</span><span>Mobile</span>
+            </span>
+            <span className="project-box-occup">
+                Impacto no Mercado: <span>15 mil downloads (Android)</span>
+            </span>
+        </div>;
+        case ('project7-desc'): return <div>
+            <span>
+                Nautical Life é um jogo de Simulador Náutico, onde você pode pescar, comprar um iate e alugar um monte de barcos de pesca para virar um magnata da pesca ao redor do mundo. Viaje de leste a oeste para pescar mais de 50 peixes diferentes, incluindo um Kraken!
+            </span>
+            <span className="project-box-occup">
+                Áreas de Atuação: <span>Entretenimento</span><span>Pesca</span><span>Tycoon</span><span>Yacht</span><span>Mobile</span>
+            </span>
+            <span className="project-box-occup">
+                Impacto no Mercado: <span>2.2 milhões downloads (Android + iOS)</span>
+            </span>
+        </div>;
         default: return '-';
     }
 }
@@ -58,13 +118,73 @@ const english = (id) => {
         case ('page-about'): return 'About me';
         case ('page-skills'): return 'Skills';
         case ('page-projects'): return "Projects";
-        case ('project1-desc'): return "Inspired by one of the largest developer recruitment sites in the world, Code Heaven emerged to meet a need in the Brazilian technology market, the search for quality professionals.";
-        case ('project2-desc'): return "This portfolio.";
-        case ('project3-desc'): return "Software made for accounting offices, used to facilitate the administration of various sectors and multiple companies, from payroll and human resources routines, to importing invoices and government tax obligations.";
-        case ('project4-desc'): return "Website with KPIs extracted directly from JIRA for daily use by the development team, the need arose because JIRA does not clearly deliver some data related to project management, so this platform was created to support this analysis.";
-        case ('project5-desc'): return "Software for warehouse and supplier control.";
-        case ('project6-desc'): return "Welcome adventurer, test your archer skill in this challenging game that will earn you hours of great fun! Hit all the targets, trigger the mechanisms and improve your bow skills in this fun time-lapse created especially for you.";
-        case ('project7-desc'): return "Nautical Life is an Nautical Simulator game, where you can fish, buy yourself a Yacht and hire a bunch of fishing boats to build a fishing Tycoon around the world. Travel from the east to the west to fish more than 50 different fishes, including a Kraken!";        
+        case ('tec-label'): return "Stacks:";
+        case ('project1-desc'): return <div>
+            <span>
+                Inspired by one of the largest developer recruitment sites in the world, Code Heaven emerged to meet a need in the Brazilian technology market, the search for quality professionals.
+            </span>
+            <span className="project-box-occup">
+                Area of Expertise: <span>Recruitment</span><span>Human Resources</span><span>Web</span>
+            </span>
+            <span className="project-box-occup">
+                Market Impact: <span>Beta, not released</span>
+            </span>
+        </div>;
+        case ('project3-desc'): return <div>
+            <span>
+                Software made for accounting offices, used to facilitate the administration of various sectors and multiple companies, from payroll and human resources routines, to importing invoices and government tax obligations.
+            </span>
+            <span className="project-box-occup">
+                Area of Expertise: <span>Accounting</span><span>Human Resources</span><span>Tax</span><span>Asset Control</span><span>Desktop</span>
+            </span>
+            <span className="project-box-occup">
+                Market Impact: <span>15 thousand accounting offices in Brazil</span>
+            </span>
+        </div>;
+        case ('project4-desc'): return <div>
+            <span>
+                Website with KPIs extracted directly from JIRA for daily use by the development team, the need arose because JIRA does not clearly deliver some data related to project management, so this platform was created to support this analysis.
+            </span>
+            <span className="project-box-occup">
+                Area of Expertise: <span>Project Management</span><span>KPIs</span><span>Web</span>
+            </span>
+            <span className="project-box-occup">
+                Market Impact: <span>12 software developer teams in the company</span>
+            </span>
+        </div>;
+        case ('project5-desc'): return <div>
+            <span>
+                Software for warehouse and supplier control.
+            </span>
+            <span className="project-box-occup">
+                Area of Expertise: <span>Warehouse Management</span><span>Suppliers</span>
+            </span>
+            <span className="project-box-occup">
+                Market Impact: <span>2 thousand clients in Brazil</span>
+            </span>
+        </div>;
+        case ('project6-desc'): return <div>
+            <span>
+                Welcome adventurer, test your archer skill in this challenging game that will earn you hours of great fun! Hit all the targets, trigger the mechanisms and improve your bow skills in this fun time-lapse created especially for you.
+            </span>
+            <span className="project-box-occup">
+                Area of Expertise: <span>Entertainment</span><span>Bow and Arrow</span><span>Mobile</span>
+            </span>
+            <span className="project-box-occup">
+                Market Impact: <span>15 thousand downloads (Android)</span>
+            </span>
+        </div>;
+        case ('project7-desc'): return <div>
+            <span>
+                Nautical Life is an Nautical Simulator game, where you can fish, buy yourself a Yacht and hire a bunch of fishing boats to build a fishing Tycoon around the world. Travel from the east to the west to fish more than 50 different fishes, including a Kraken!
+            </span>
+            <span className="project-box-occup">
+                Area of Expertise: <span>Entertainment</span><span>Fishing</span><span>Tycoon</span><span>Yacht</span><span>Mobile</span>
+            </span>
+            <span className="project-box-occup">
+                Market Impact: <span>2.2 millions downloads (Android + iOS)</span>
+            </span>
+        </div>;
         default: return '-';
     }
 }

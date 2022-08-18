@@ -25,6 +25,26 @@
   border-bottom: 5px solid var(--green);
 }
 
+.project-box-occup {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px 0px 0px 0px;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.project-box-occup span {
+  color: var(--green);
+  display: inline-block;
+  border: 1px solid var(--green);
+  border-radius: 3px;
+  padding: 1px 10px;
+}
+
+.project-box-occup svg {
+  padding-right: 5px;
+}
+
 .project-box-header {
   background-color: var(--light-gray);
   border-radius: 5px;
@@ -50,7 +70,6 @@
 }
 
 .project-box-links {
-  margin-top: 10px;
   font-size: 14px;
   color: var(--light-gray);
 }
@@ -65,13 +84,6 @@
 
 .project-box-stacks {
   color: var(--green);
-}
-
-.project-box-stack {
-  display: inline-block;
-  padding-right: 25px;
-  border: 1px solid --var(--light-gray);
-  height: 30px;
 }
 
 .project-box-stack svg {
